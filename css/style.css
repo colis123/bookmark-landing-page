@@ -36,7 +36,7 @@ body {
   background: var(--soft-blue);
   color: #fff;
   padding: .5rem 1.5rem;
-  box-shadow: 1px 3px 10px rgba(0, 0, 0, .2)
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, .2);
 }
 
 .btn-red {
@@ -56,6 +56,33 @@ img {
 .opacity-6 {
   opacity: .6;
 }
+
+.py-8 {
+  padding: 0 8rem;
+}
+
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-gap: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 1px 6px 20px rgba(0, 0, 0, .1);
+  padding: 1rem .25rem 1rem .25rem;
+}
+
+.card img {
+  width: 50%;
+}
+
+.card p:nth-child(2) {
+  font-size: 12px;
+  opacity: .5;
+  margin-top: .25rem;
+}
+
 
 
 /* Navigation */
@@ -139,7 +166,6 @@ img {
 }
 
 .features .container .feature-info {
-  padding: 0 8rem;
   text-align: center;
 }
 
@@ -169,6 +195,32 @@ img {
 
 .features .container .bookmark .right-side a {
   width: 110px;
+}
+
+/* Download Section */
+.download .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 60px;
+}
+
+.download .container .download-info {
+  text-align: center;
+}
+
+.download .container .download-info h2 {
+  margin-bottom: 1.25rem;
+}
+
+.download .container .download-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 5rem;
+  grid-column-gap: 20px;
+}
+
+.download .container .download-cards:nth-child(2){
+  
 }
 
 
