@@ -18,6 +18,11 @@ a {
   font-size: 13px;
 }
 
+li {
+  list-style: none;
+}
+
+
 body {
   font-family: 'Rubik', sans-serif;
 }
@@ -37,6 +42,10 @@ body {
   color: #fff;
   padding: .5rem 1.5rem;
   box-shadow: 1px 3px 10px rgba(0, 0, 0, .2);
+}
+
+.btn-center {
+  margin: 0 auto;
 }
 
 .btn-red {
@@ -60,6 +69,9 @@ img {
 .py-8 {
   padding: 0 8rem;
 }
+.py-10 {
+  padding: 0 10rem;
+}
 
 
 .card {
@@ -71,6 +83,8 @@ img {
   border-radius: 8px;
   box-shadow: 1px 6px 20px rgba(0, 0, 0, .1);
   padding: 1rem .25rem 1rem .25rem;
+  width: 250px;
+  height: 300px;
 }
 
 .card img {
@@ -202,10 +216,12 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 60px;
+  margin-bottom: 4rem;
 }
 
 .download .container .download-info {
   text-align: center;
+
 }
 
 .download .container .download-info h2 {
@@ -213,15 +229,92 @@ img {
 }
 
 .download .container .download-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   padding: 0 5rem;
-  grid-column-gap: 20px;
+  display: flex;
+  height: 500px;
+  justify-content: center;
 }
 
-.download .container .download-cards:nth-child(2){
-  
+.download .container .download-cards .card:nth-child(1) {
+  margin: 0 1rem 0 0;
 }
+
+.download .container .download-cards .card:nth-child(2){
+  margin: 5rem 1rem 0 0;
+}
+
+.download .container .download-cards .card:nth-child(3) {
+  margin-top: 10rem;
+}
+
+/* Frequently Asked Question */
+.faq .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+.faq .container .faq-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.faq .container .faq-questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.faq .container .faq-questions ul {
+  width: 80%;
+}
+
+.faq .container .faq-questions ul li {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.faq .container .faq-questions ul li a {
+  font-size: 15px;
+  color: #333;
+}
+
+
+.faq .container .faq-questions ul li a img {
+  width: 80%;
+}
+
+.faq .container .faq-questions ul li::before {
+  content: "";
+  top: 0;
+  left: 0px;
+  height: 1px;
+  width: 100%;
+  background:#333;
+  opacity: .2;
+  position: absolute;
+}
+
+.faq .container .faq-questions ul li:nth-child(4)::after {
+  content: "";
+  top: 50px;
+  left: 0px;
+  height: 1px;
+  width: 100%;
+  background: #333;
+  opacity: .2;
+  position: absolute;
+}
+ 
+
+
+
 
 
 
