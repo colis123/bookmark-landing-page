@@ -20,7 +20,7 @@
         <li><a href="#">Features</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a class="btn btn-red" href="#">Login</a></li>
+        <li><a class="btn-red" href="#">Login</a></li>
       </ul>
     </div>
   </nav>
@@ -53,14 +53,14 @@
           Your bookmarks sync between your devices so you can access them on the go.
         </p>
       </div>
-      <div class="feature-tabs opacity-6">
-        <a href="#">Simple Bookmarking</a>
-        <a href="#">Speedy Searching</a>
-        <a href="#">Easy Sharing</a>
+      <div class="feature-tabs">
+        <a id='bookmarking'>Simple Bookmarking</a>
+        <a id='searching'>Speedy Searching</a>
+        <a id='sharing'>Easy Sharing</a>
       </div>
       <div class="bookmark">
         <div class="left-side">
-          <img src="/images/illustration-hero.svg" alt="Feature">
+          <img src="/images/illustration-features-tab-1.svg" alt="Feature">
         </div>
         <div class="right-side">
           <h2>Bookmark in one click</h2>
@@ -148,20 +148,34 @@
     </div>
   </section>
 
+  <section class="join">
+    <p>35,000+ already joined</p>
+    <h2>Stay up-to-date with what we’re doing</h2>
+    <div class="input">
+      <input type="text" placeholder="Enter you email address">
+      <a class="btn-red" href="#">Contact Us</a> 
+    </div>
+  </section>
 
-  <!-- Intelligent search
+  <footer>
+    <div class="container">
+      <img class="logo" src="/images/logo-bookmark-light.svg" alt="Logo">
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icons">
+        <a href="#">
+          <img src="/images/icon-facebook.svg" alt="Facebook">
+        </a>
+        <a href="#">
+          <img src="/images/icon-twitter.svg" alt="Twitter">
+        </a>
+      </div>
+    </div>
 
-  Our powerful search feature will help you find saved sites in no time at all. 
-  No need to trawl through all of your bookmarks.
-
-  More Info
-
-  Share your bookmarks
-
-  Easily share your bookmarks and collections with others. Create a shareable 
-  link that you can send at the click of a button.
-
-  More Info -->
+  </footer>
 
 
 
@@ -208,12 +222,6 @@
   Features
   Pricing
   Contact -->
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<script src="main.js"></script>
 </body>
 </html>
