@@ -123,6 +123,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .main-nav .container img {
   width: 150px;
 }
@@ -230,7 +234,7 @@ img {
   content: '';
   position: absolute;
   top: 40px;
-  left: 40px;
+  left: 10px;
   height: 1px;
   width: 100%;
   background: var(--grayish-blue);
@@ -244,7 +248,7 @@ img {
   height: 3px;
   width: 0;
   background: var(--soft-red);
-  animation: red-line 500ms ease-in-out forwards;
+  animation: red-line 250ms ease-in-out forwards;
 }
 
 @keyframes red-line {
@@ -456,6 +460,29 @@ footer .container .icons a img {
   margin: 0 1rem;
 }
 
+
+
+@media screen and (max-width: 1000px) {
+
+  /* Cards Section */
+  .download .container .download-cards {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .download .container .download-cards .card:nth-child(1) {
+    margin: 2rem;
+  }
+  
+  .download .container .download-cards .card:nth-child(2){
+    margin: 2rem;
+  }
+  
+  .download .container .download-cards .card:nth-child(3) {
+    margin: 2rem;
+  }
+}
 
 
 

@@ -95,3 +95,6 @@ sharing.addEventListener('click', function(e) {
   </div>
   `
 })
+
+
+// FAQ
