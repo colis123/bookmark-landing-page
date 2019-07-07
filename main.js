@@ -35,7 +35,7 @@ bookmarking.addEventListener('click', function(e) {
   bookmarkContent.innerHTML =
   `
     <div class="left-side">
-      <img src="/images/illustration-features-tab-1.svg" alt="Feature">
+      <img src="images/illustration-features-tab-1.svg" alt="Feature">
     </div>
     <div class="right-side">
       <h2>Bookmark in one click</h2>
@@ -60,7 +60,7 @@ searching.addEventListener('click', function(e) {
   bookmarkContent.innerHTML = 
   `
     <div class="left-side">
-      <img src="/images/illustration-features-tab-2.svg" alt="Feature">
+      <img src="images/illustration-features-tab-2.svg" alt="Feature">
     </div>
     <div class="right-side">
       <h2>Intelligent search</h2>
@@ -83,7 +83,7 @@ sharing.addEventListener('click', function(e) {
   bookmarkContent.innerHTML = 
   `
   <div class="left-side">
-      <img src="/images/illustration-features-tab-3.svg" alt="Feature">
+      <img src="images/illustration-features-tab-3.svg" alt="Feature">
   </div>
   <div class="right-side">
     <h2>Share your bookmarks</h2>
