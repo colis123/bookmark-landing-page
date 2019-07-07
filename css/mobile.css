@@ -13,12 +13,102 @@
 
 .main-nav .container .mobile-nav a img {
   width: 25px;
-  transition: all 250ms ease-in-out;
 }
 
 .main-nav .container .mobile-nav a img:hover {
   transform: rotate(180deg);
 }
+
+/* Nav Overlay */
+.overlay {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background:  rgba(5, 6, 43, 0.9);
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 160px auto;
+  padding: 1.5rem 2.25rem;
+  justify-items: center;
+}
+
+.overlay .logo{
+  width: 150px;
+  align-self: center;
+}
+
+.overlay .close-icon {
+  display: inline-block;
+  width: 20px;
+  justify-self: end;
+  align-self: center;
+  margin-top: .25rem;
+}
+
+.overlay ul {
+  position: relative;
+  grid-column: 1/ -1;
+}
+
+.overlay ul li  {
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.overlay ul li a {
+  font-size: 24px;
+  padding: .5rem 1.5rem;
+  color: #fff;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.overlay ul li:nth-child(1)::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 50px;
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.overlay ul li::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 45px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+.overlay ul li:last-child::after {
+ display: none;
+}
+
+.overlay ul li a:last-child {
+  padding: .5rem 5rem;
+}
+
+.overlay ul li:last-child {
+  margin-top: 3rem;
+}
+
+
+.mobile-nav-btn {
+  border: 1px solid rgba(255, 255, 255, 1);
+  margin-top: 3rem;
+  font-weight: bold;
+}
+
+
 
 /* Showcase */
 .showcase .container {

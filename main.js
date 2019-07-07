@@ -97,4 +97,20 @@ sharing.addEventListener('click', function(e) {
 })
 
 
-// FAQ
+// Mobile nav
+let open = document.querySelector('#mobile-icon');
+let overlay = document.querySelector('.overlay');
+let close = document.querySelector('.close-icon');
+
+open.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  overlay.style.visibility = 'visible';
+})
+
+close.addEventListener('click', function() {
+  overlay.style.visibility = 'hidden';
+})
+
+
+

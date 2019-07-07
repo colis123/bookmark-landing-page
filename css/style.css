@@ -113,6 +113,10 @@ img {
   margin-top: .25rem;
 }
 
+/* Overlay */
+.overlay {
+  display: none;
+}
 
 
 /* Navigation */

@@ -13,6 +13,18 @@
   <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/mobile.css">
 </head>
 <body>
+  <div class="overlay">
+    <img class="logo" src="/images/logo-bookmark-light.svg" alt="Logo">
+    <a class="close-icon" href="#">
+      <img src="/images/icon-close.svg" alt="Close icon"> 
+    </a>
+    <ul>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a class="mobile-nav-btn" href="#">Login</a></li>
+    </ul>
+  </div>
   <nav class="main-nav">
     <div class="container">
       <img src="/images/logo-bookmark.svg" alt="Bookmark Logo">
@@ -23,7 +35,7 @@
         <li><a class="btn-red" href="#">Login</a></li>
       </ul>
       <div class="mobile-nav">
-        <a href="#">
+        <a id="mobile-icon" href="#">
           <img src="/images/icon-hamburger.svg" alt="Icon">
         </a>
       </div>
